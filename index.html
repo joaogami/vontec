@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VONTEC — Identidade Técnica</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #090909; --surface: #141414; --border: #262626;
+            --fg: #d4d4d4; --accent: #3b82f6;
+            --key: #c678dd; --str: #98c379; --comm: #5c6370;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: var(--fg); font-family: 'Inter', sans-serif;
+               background-image: radial-gradient(var(--border) 0.5px, transparent 0.5px); background-size: 30px 30px; }
+
+        .container { padding-inline: 24px; max-width: 900px; margin: 0 auto; }
+
+        /* Estilo Syntax Highlighting */
+        .keyword { color: var(--key); }
+        .string { color: var(--str); }
+        .comment { color: var(--comm); font-family: var(--font-mono); }
+
+        /* Header e Logo */
+        header { padding: 60px 0; text-align: center; }
+        .logo-symbol { width: 80px; height: 80px; margin: 0 auto 20px; animation: spark-flicker 4s infinite ease-in-out; }
+        @keyframes spark-flicker { 0%, 100% { opacity: 1; filter: drop-shadow(0 0 2px var(--accent)); } 50% { opacity: 0.6; filter: drop-shadow(0 0 10px var(--accent)); } }
+
+        /* Terminal Estilo */
+        .terminal { background: #000; border: 1px solid var(--border); border-radius: 8px; padding: 15px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; margin-bottom: 30px; }
+        .terminal::before { content: "> status_report.log"; color: var(--accent); display: block; margin-bottom: 10px; font-size: 0.7rem; }
+
+        /* Cards */
+        .card { background: var(--surface); border: 1px solid var(--border); padding: 24px; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); box-shadow: 0 0 20px rgba(59, 130, 246, 0.1); }
+        h3 { font-family: 'JetBrains Mono', monospace; color: #fff; margin-bottom: 10px; }
+
+        footer { padding: 40px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--fg-muted); }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo-symbol">
+            <svg viewBox="0 0 100 100" fill="none"><line x1="50" y1="20" x2="50" y2="80" stroke="#fff" stroke-width="8"/><line x1="25" y1="35" x2="75" y2="65" stroke="#fff" stroke-width="8"/><line x1="25" y1="65" x2="75" y2="35" stroke="#fff" stroke-width="8"/><rect x="20" y="46" width="60" height="8" fill="#3b82f6"/></svg>
+        </div>
+        <h1 style="font-family: 'JetBrains Mono'">VONTEC</h1>
+        <p style="font-family: 'JetBrains Mono'; color: var(--accent); margin-top: 10px;">[vonk] • s.f. faísca, fagulha, o início de tudo.</p>
+    </header>
+
+    <main class="container">
+        <div class="terminal">
+            <p><span class="keyword">const</span> <span class="string">vontec_status</span> = { <span class="string">frotas</span>: <span class="string">'online'</span>, <span class="string">sirp</span>: <span class="string">'online'</span>, <span class="string">infra</span>: <span class="string">'active'</span> };</p>
+        </div>
+
+        <div class="case-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="card">
+                <h3>01. <span class="keyword">GESTÃO_FROTAS</span></h3>
+                <p>Governança <span class="string">intermunicipal</span>. Auditoria de faturamento e controle de ativos sob demanda.</p>
+            </div>
+            <div class="card">
+                <h3>02. <span class="keyword">SIRP_ICISMEP</span></h3>
+                <p>Automação de <span class="string">compras</span>. Workflow de licitações e gestão de itens de alta complexidade.</p>
+            </div>
+        </div>
+
+        <h2 style="font-family: 'JetBrains Mono'; margin-top: 40px; margin-bottom: 20px; font-size: 1.2rem;">> EXPERTISE</h2>
+        <div class="card">
+            <p><span class="keyword">import</span> { <span class="string">infra, consultoria, dev, ai</span> } <span class="keyword">from</span> <span class="string">'@vontec/core'</span>;</p>
+        </div>
+    </main>
+
+    <footer class="footer container">
+        <p>VONTEC_TECH_2026 // IGNITING_THE_FUTURE</p>
+    </footer>
+</body>
+</html>
