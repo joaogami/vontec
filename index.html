@@ -6,6 +6,8 @@
     <title>VONTEC — Identidade Técnica</title>
     <link rel="icon" href="icon.svg">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         :root {
             --bg: #090909; --surface: #141414; --border: #262626;
@@ -39,6 +41,9 @@
         h3 { font-family: 'JetBrains Mono', monospace; color: #fff; margin-bottom: 10px; }
 
         footer { padding: 40px; text-align: center; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--fg-muted); }
+        .contact-links { margin-top: 20px; display: flex; justify-content: center; gap: 20px; }
+        .contact-links a { color: var(--fg); text-decoration: none; transition: 0.3s; }
+        .contact-links a:hover { color: var(--accent); }
     </style>
 </head>
 <body>
@@ -48,6 +53,11 @@
         </div>
         <h1 style="font-family: 'JetBrains Mono'">VONTEC</h1>
         <p style="font-family: 'JetBrains Mono'; color: var(--accent); margin-top: 10px;">[vonk] • s.f. faísca, fagulha, o início de tudo.</p>
+
+        <div class="contact-links">
+            <a href="https://instagram.com/vontecnologia" target="_blank"><i class="fab fa-instagram"></i> @vontecnologia</a>
+            <a href="https://wa.me/5531996784854" target="_blank"><i class="fab fa-whatsapp"></i> (31) 99678-4854</a>
+        </div>
     </header>
 
     <main class="container">
