@@ -18,5 +18,3 @@ A nova identidade foca em:
 ## Como Visualizar:
 Basta abrir o arquivo `index.html` em qualquer navegador moderno.
 
----
-*Criado por Claude Code — Tecnologia com propósito.*
